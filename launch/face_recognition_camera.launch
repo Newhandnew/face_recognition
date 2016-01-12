@@ -1,0 +1,8 @@
+
+<launch>
+	<!-- Face recognition -->
+	<include file="$(find usb_cam)/launch/usb_cam_face.launch" />
+	<node pkg="face_recognition" type="Fclient" name="Fclient" output="screen"/>
+	<!-- <node pkg="face_recognition" type="Fserver" name="Fserver" /> -->
+	<!-- <include file="$(find face_recognition)/launch/face_recognition_server.launch" /> -->
+</launch>	
